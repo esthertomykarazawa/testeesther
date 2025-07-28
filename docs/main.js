@@ -1,5 +1,5 @@
 async function loadSchedule() {
-  const response = await fetch('opensauce_schedule.json');
+  const response = await fetch('./opensauce_schedule.json');
   const data = await response.json();
   const content = document.getElementById('content');
   const tabs = document.querySelectorAll('#tabs button');
@@ -31,4 +31,4 @@ async function loadSchedule() {
   render('Friday');
 }
 
-loadSchedule();
+document.addEventListener('DOMContentLoaded', loadSchedule);
