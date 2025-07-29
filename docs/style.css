@@ -1,0 +1,79 @@
+/* Base layout & typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #6f42c1;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header .download {
+    display: inline-block;
+    margin-top: .5em;
+    background: #6f42c1;
+    color: #fff;
+    padding: .5em 1em;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Tabs */
+#tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin: 1em 0;
+}
+
+#tabs button {
+    padding: 1.2em 2em;
+    font-size: 1.5rem;
+    border: 2px solid #6f42c1;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#tabs button.active {
+    background: #6f42c1;
+    color: #fff;
+}
+
+/* Content area */
+#content {
+    padding: 0 1em 2em;
+}
+
+/* Individual events */
+.event {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 0;
+}
+
+.event h3 {
+    margin: .2em 0;
+}
+
+.event .time {
+    font-weight: bold;
+}
+
+.error {
+    color: #b00020;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    #content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
