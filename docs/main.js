@@ -1,5 +1,9 @@
 async function loadSchedule() {
-  const response = await fetch('../opensauce_schedule.json');
+  const response = await fetch('./opensauce_schedule.json');
+  if (!response.ok) {
+    console.error(`Failed to load schedule (${response.status})`);
+    return;
+  }
   const data = await response.json();
   const content = document.getElementById('content');
   const tabs = document.querySelectorAll('#tabs button');
