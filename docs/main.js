@@ -1,5 +1,6 @@
 async function loadSchedule() {
-  const response = await fetch('../opensauce_schedule.json');
+  // Fetch the schedule JSON from the same directory as the webpage
+  const response = await fetch('opensauce_schedule.json');
   const data = await response.json();
   const content = document.getElementById('content');
   const tabs = document.querySelectorAll('#tabs button');
