@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OpenSauce Schedule</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenSauce Schedule</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-<h1>OpenSauce 2025 Schedule</h1>
-<a class="download" href="opensauce_schedule.ics" download>Download ICS</a>
+  <h1>OpenSauce 2025 Schedule</h1>
+  <a class="download" href="opensauce_schedule.ics" download>Download ICS</a>
 </header>
-<nav id="tabs">
-<button data-day="Friday" class="active">Friday, July 25</button>
-<button data-day="Saturday">Saturday, July 26</button>
-<button data-day="Sunday">Sunday, July 27</button>
-</nav>
-<section id="content"></section>
-<section id="calendar"></section>
+<main class="container">
+  <nav id="tabs">
+    <button data-day="Friday" class="active">Friday, July 25</button>
+    <button data-day="Saturday">Saturday, July 26</button>
+    <button data-day="Sunday">Sunday, July 27</button>
+  </nav>
+  <section id="content"></section>
+  <section id="calendar"></section>
+</main>
 <script src="main.js"></script>
 </body>
 </html>
