@@ -72,3 +72,29 @@ header .download {
         margin: 0 auto;
     }
 }
+
+/* Calendar table */
+#calendar {
+    overflow-x: auto;
+    margin: 2em 0;
+}
+
+#calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar-table th, #calendar-table td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    vertical-align: top;
+}
+
+#calendar-table th {
+    background: #333;
+    color: #fff;
+}
+
+.cal-event {
+    margin-bottom: 0.25em;
+}
